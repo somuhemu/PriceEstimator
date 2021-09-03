@@ -8,26 +8,16 @@ import { FetchStoreService } from '../../../fetchstore.service';
 })
 export class QuestionsdisplayComponent implements OnInit {
 
-  @Output() serverCreated = new EventEmitter<{serverName: string}>();
-  @Input() name: string | undefined;
+  @Output() questionClicked = new EventEmitter();
   constructor(private fetchstoreservice: FetchStoreService) { }
+  QNo = this.fetchstoreservice.QNo;
 
-  sections = this.fetchstoreservice.Slist;
+  Qtext = this.fetchstoreservice.Qlist[this.QNo].q_text;
+  onClick()
+  {
+     this.questionClicked.emit();
+  }
   ngOnInit(): void {
   }
-  onAddServer(nameInput: HTMLInputElement) {
-    this.serverCreated.emit({
-      serverName: nameInput.value,
-      //serverContent: this.serverContentInput.nativeElement.value
-      //eleref has this nativeelemt so that we get access to the underlying element 
-    });
-  }
-
-
-  // onSetTo(status: string) {
-
-  //   // this.loggingService.logStatusChange(status);
-
-  // }
 
 }

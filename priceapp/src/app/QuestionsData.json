@@ -1,6 +1,6 @@
 [
     {
-        "id" : 11,
+        "id" : 0,
         "q_text" : "Do you already have an existing product to start from ?",
         "options" : [
             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -10,7 +10,7 @@
      },
 
      {
-         "id" : 12,
+         "id" : 1,
          "q_text" : "How would you describe the size of your desired digital solution ?",
          "options" : [
              {     "a" : "Small"  ,"minPrice":5, "maxPrice":10 },
@@ -22,7 +22,7 @@
 
 
       {
-         "id" : 21,
+         "id" : 2,
          "q_text" : "To what extent do you feel like you need some help in digital strategy ?",
          "options" : [
              {     "a" : 1  ,"minPrice":5, "maxPrice":10 },
@@ -35,7 +35,7 @@
       },
 
       {
-         "id" : 22,
+         "id" : 3,
          "q_text" : "Do you want us to help you define the business objectives for your project ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -45,7 +45,7 @@
       },
 
       {
-         "id" : 23,
+         "id" : 4,
          "q_text" : "Do you want us to help you define KPI’s and targets for your objectives ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -55,7 +55,7 @@
       },
 
       {
-         "id" : 24,
+         "id" : 5,
          "q_text" : "Do you want us to (further) investigate your target groups and their needs ?",
          "options" : [
              {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
@@ -65,7 +65,7 @@
       },
 
       {
-         "id" : 25,
+         "id" : 6,
          "q_text" : "Do you want us to (further) investigate your competition ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -75,7 +75,7 @@
       },
 
       {
-         "id" : 26,
+         "id" : 7,
          "q_text" : "Do you want us to guide you through the trends in your industry ?",
          "options" : [
              {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
@@ -85,7 +85,7 @@
       },
 
       {
-         "id" : 27,
+         "id" : 8,
          "q_text" : "Do you want us to create a clear picture of the strengths and weaknesses of yourcurrent offering ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -95,7 +95,7 @@
       },
 
       {
-         "id" : 28,
+         "id" : 9,
          "q_text" : "Do you want us to analyse your current analytics in order to offer more personalised recommendations ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -105,7 +105,7 @@
       },
 
       {
-         "id" : 29,
+         "id" : 10,
          "q_text" : "Do you want us to translate your business goals into a proposal for a concrete digital solution ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -115,7 +115,7 @@
       },
 
       {
-         "id" : 210,
+         "id" : 11,
          "q_text" : "Do you want us to define a roadmap for your offering ?",
          "options" : [
              {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
@@ -125,7 +125,7 @@
       },
 
       {
-         "id" : 211,
+         "id" : 12,
          "q_text" : "Do you need branding for your product ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -135,7 +135,7 @@
       },
 
       {
-         "id" : 212,
+         "id" : 13,
          "q_text" : "Do you need a technical analysis of your product ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -146,7 +146,7 @@
 
 
       {
-         "id" : 31,
+         "id" : 14,
          "q_text" : "Select the aspects you need for UX (multiple allowed).",
          "options" : [
              {     "a" : "WIREFRAMES"  ,"minPrice":5, "maxPrice":10 },
@@ -162,7 +162,7 @@
       },
 
       {
-         "id" : 32,
+         "id" : 15,
          "q_text" : "Mark the aspects you need for UI (multiple allowed).",
          "options" : [
              {     "a" : "ANIMATIONS" ,"minPrice":5, "maxPrice":10  },
@@ -175,7 +175,7 @@
 
 
       {
-         "id" : 41,
+         "id" : 16,
          "q_text" : "What devices does your application have to support? (multiple allowed)",
          "options" : [
              {     "a" : "PHONE"  ,"minPrice":5, "maxPrice":10 },
@@ -190,7 +190,7 @@
       },
 
       {
-         "id" : 42,
+         "id" : 17,
          "q_text" : "Do you have your own backend systems ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -201,7 +201,7 @@
       },
 
       {
-         "id" : 43,
+         "id" : 18,
          "q_text" : "Are there external API's to take into account for integration ?",
          "options" : [
              {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
@@ -211,7 +211,7 @@
       },
 
       {
-         "id" : 44,
+         "id" : 19,
          "q_text" : "Check off the features you want your product to have. Features that might seem minor to you, can have a big impact on your application and the building process. Be very precise about the options you pick, that way you’ll get the best indication of the required budget. If you don’t have a clue about the meaning of these features, just contact us and our team will be happy to help you out. (multiple allowed).",
           
          "options" : [
@@ -252,7 +252,7 @@
 
 
       {
-         "id" : 51,
+         "id" : 20,
          "q_text" : "Select your preference: After the release of my product I need…",
          "options" : [
              {     "a" : "... THE ASSURANCE THAT EVERYTHING KEEPS WORKING SMOOTHLY ALL THE TIME AND A SERVICE DESK FOR ALL OF MY QUESTIONS AND REPORTS." ,"minPrice":5, "maxPrice":10  },
@@ -264,7 +264,7 @@
       },
 
       {
-         "id" : 52,
+         "id" : 21,
          "q_text" : "For the go-to-market of my solution I need…",
          "options" : [
              {     "a" : "... LITTLE SUPPORT FOR THE 'GO TO MARKET' OF MY PRODUCT"  ,"minPrice":5, "maxPrice":10 },

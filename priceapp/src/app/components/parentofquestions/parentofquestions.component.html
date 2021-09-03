@@ -1,11 +1,1 @@
-<p>parentofquestions works!</p>
-
-
-<app-questionsdisplay  (serverCreated)="onServerAdded($event)" *ngFor="let serverElement of serverElements"  [name]="serverElement.name"></app-questionsdisplay>
-<div
-        *ngFor="let serverElement of serverElements">
-          <strong >{{ serverElement.name }}</strong>
-          <strong >{{ num }}</strong>
-    </div>
-
-
+<app-questionsdisplay (questionClicked)="changeQNo()"></app-questionsdisplay>

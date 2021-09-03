@@ -1,0 +1,9 @@
+
+<div class="container" *ngIf="display">
+    <app-header></app-header>
+    <a routerLink="/parentofquestions" (click)="onClick()">parent of question</a><br>
+    <app-footer></app-footer> 
+</div>
+<div>
+    <router-outlet *ngIf="gonext"></router-outlet>
+</div>

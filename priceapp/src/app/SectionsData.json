@@ -1,28 +1,28 @@
 
  [
         {
-            "id" : 1,
-            "sname" :"s1",
+            "id" : 0,
+            "sname" :"General Questions",
             "qafs" : [0,1]
         },
         {
-            "id" : 2,
-            "sname" :"s2",
+            "id" : 1,
+            "sname" :"Strategy",
             "qafs" : [2,3,4,5,6,7,8,9,10,11,12,13]
         },
         {
-            "id" : 3,
-            "sname" :"s3",
+            "id" : 2,
+            "sname" :"UI/UX",
             "qafs" : [14,15]
         },
         {
-            "id" : 4,
-            "sname" :"s4",
+            "id" : 3,
+            "sname" :"Development",
             "qafs" : [16,17,18,19]
         },
         {
-            "id" : 5,
-            "sname" :"s5",
+            "id" : 4,
+            "sname" :"Product Growth",
             "qafs" : [20,21]
         }
 ]

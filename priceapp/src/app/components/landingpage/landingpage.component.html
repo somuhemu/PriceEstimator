@@ -1,9 +1,55 @@
 
-<div class="container" *ngIf="display">
-    <app-header></app-header>
-    <a routerLink="/parentofquestions" (click)="onClick()">parent of question</a><br>
-    <app-footer></app-footer> 
+<div class="container-fluid" *ngIf="display">
+
+        <div class="container">
+                <h1>Calculate the cost of your digital application </h1>
+                <p>
+                        "What does building a quality digital application cost?” - by far the most<br>
+                        asked question, if we must believe our Account Managers.</p>
+
+                <p>We put it to the test and asked a random group of people that particular<br>
+                        question. Let’s say we got the most varied answers; from “I don’t know, <br>
+                        like the cost of a bag of chips” to “well that would probably cost me a <br>
+                        brand new Ferrari, or two”.</p>
+
+                <p>So, to help all misunderstandings out of this world and to relieve our<br>
+                        sales guys and girls, we decided to create a digital application cost <br>
+                        calculator.
+                </p>
+                <button routerLink="/parentofquestions" class="btn-solid-lg" (click)="setToHide()">DISCOVER THE PRICE OF
+                        YOUR CUSTOM DIGITAL PRODUCT NOW</button>
+
+                <h1>Calculation in 4, 3, 2, 1</h1>
+                <p>Do you have a clear view of what you want for your digital product? Do you<br>
+                        know which features you would like to implement? Or maybe you just got a<br>
+                        vague idea for digitalization? You know what, it doesn't matter, because you<br>
+                        can run our calculator as many times as you want!<br></p>
+
+                <p>We will ask you to answer a few questions related to the digital solution you<br>
+                        are looking for. Covering the 4 main fields of your digital product. That's it,<br>
+                        in just a quick 4, 3, 2, 1 minutes, you'll get an estimated price range for your<br>
+                        application.</p>
+
+                <h1>Calculated, signed, delivered!</h1>
+                <p>Would be great, right? But that isn’t exactly how this calculator works.</p>
+
+                <p>After answering the questions related to your project, we’ll be able to give<br>
+                        you a price range for your desired digital product. This estimation isn't an<br>
+                        official quotation, but we're here to further discuss your project.</p>
+
+                <p>Because we’d love to make your digital dreams come to life!</p>
+
+                <p>An important side note: features that might seem minor to you, can have a<br>
+                        big impact on your application and the building process. Be very precise<br>
+                        about the options you pick, that way you’ll get the best indication of the<br>
+                        required budget.</p>
+
+                <h1>Start your calculation here!</h1>
+                <button routerLink="/parentofquestions" class="btn-solid-lg" (click)="setToHide()">LAUNCH
+                        CALCULATOR</button>
+
+        </div>
+     
 </div>
-<div>
-    <router-outlet *ngIf="gonext"></router-outlet>
-</div>
+
+<router-outlet></router-outlet>

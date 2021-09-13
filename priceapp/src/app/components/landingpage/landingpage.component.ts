@@ -8,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingpageComponent implements OnInit {
 
-  display=true;
-  gonext=false;
-  
+  display:boolean = true;
+  setToHide()
+  {
+    this.display = false;
+  }
 
   ngOnInit(): void {
   }
 
-  onClick(){
-    this.display = false;
-    this.gonext=true;
-  }
+
 }

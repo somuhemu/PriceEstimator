@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* nav a:visited,a:link{
+    color:red;
+}
+
+nav a:hover{
+    color:yellow;
+}
+nav a.active{
+    color:green;
+} */
+*
+{
+    margin:0;
+    padding:0;
+    background-color: #ee0000;
+    color:white;
+}
+img{
+    width:6%;
+}
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #7dc22b;
+	border-radius: 4px;
+	background-color: #7dc22b;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	
+	text-decoration: none;
+	transition: all 0.2s;
+	line-height: 150%;
+	
+    overflow: hidden;
+    white-space: pre-wrap !important;
+}
+
+.btn-solid-lg:hover {
+	background-color: darkgreen;
+	color: white; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #3c3c3c;
+	border-radius: 4px;
+	color:#ffffff;
+	background-color: #3c3c3c;
+	
+	font-weight: 600;
+	font-size: 0.875rem;
+	
+	text-decoration: none;
+	transition: all 0.2s;
+
+	line-height: 150%;
+	
+    overflow: hidden;
+    white-space: pre-wrap !important;
+}
+
+.btn-outline-lg:hover {
+	background-color: #b4b4b4;
+	color: #ffffff;
+	text-decoration: none;
+}
+.btn-notmc
+{
+	width: 100%;
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #ee0000;
+	border-radius: 4px;
+	background-color: #9d1419;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 150%;
+	text-decoration: none;
+	transition: all 0.2s;
+
+	overflow: hidden;
+    white-space: pre-wrap !important;
+}
+.btn-notmc:hover{
+	background-color: grey;
+	color: white; 
+	text-decoration: none;
+}
+.btn-notmc:visited{
+	background-color: green;
+	color: white; 
+	text-decoration: none;
+}
+.btn-notmc:focus{
+	background-color: green;
+	color: white; 
+	text-decoration: none;
+}

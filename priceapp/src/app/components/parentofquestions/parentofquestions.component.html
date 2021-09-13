@@ -1,1 +1,21 @@
-<app-questionsdisplay (questionClicked)="changeQNo()"></app-questionsdisplay>
+<div *ngIf="!checkForDive()">
+    <h1> GENERAL QUESTIONS</h1>
+   <hr class="yellow-row">
+    <div class="box-border">
+        <div class="mt-5 ">
+        <h4 class="mt-1 pl-2">Welcome to the Mangoes calculator Tool !</h4>
+        <p class="mt-3 pl-2">You've got a world-changing idea for a digital project you want to pursue,but don't
+            know if it's feasible?
+            Your boss asked you for a rough estimate of that one project and needs it tomorrow?
+            You'll discover it all in only 4 minutes.</p>
+        </div>
+    </div>
+<br>
+
+    <button (click)="setLetsDiveTrue()">LETS'S DIVE IN</button>
+</div>
+
+<div *ngIf="letsDive===0">
+    <app-questionsdisplay [QText]="Qtext" [options]="options" [mc]="mc" [SecNo]="SecNo" [QNo]="QNo" 
+        (onSelected)="onSelect($event)" (onFetchNxt)="fetchnext()" (onPrev)="fetchprevious()"></app-questionsdisplay>
+</div>

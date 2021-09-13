@@ -1,38 +1,56 @@
-<!-- <p>questionsdisplay works!</p>
-<p>{{sections}}</p>
-<p *ngFor="let obj of sections">{{obj.id}} {{obj.qafs}}</p>
+<div class="placemiddle">
+     <div >
+          <label class="qestion-border pt-2 pl-1 pb-2 pr-1">{{QText}}</label>
+          <div class="qestion-border">
+               <div *ngFor="let op of options">
+                    <button (click)="onSelect(op.choice,op.choicevalue,op.minPrice,op.maxPrice)" class="btn-mc">{{op.choice}}:{{op.choicevalue}}</button>
+               </div>
+          </div>
+     </div>
 
-<div>{{ name }}</div>
+     <div *ngIf="!wanttogotoSectionOverview()">
+          <button (click)="fetchnext()" class="btn-solid-lg mt-2" style="float: right;">next</button>
 
-<input type="text" class="form-control" #serverNameInput>
-<button class="btn btn-primary" (click)="onAddServer(serverNameInput)">Add Server</button>
+     </div>
 
-<div>
-      if not multiple choice
-      <label>{{Question}}</label>
-      <div>
+     <div *ngIf="wanttogotoSectionOverview()">
+          <button routerLink="/overview" class="btn-solid-lg mt-2" style="float: right;">Next</button>
+     </div>
 
-            <button>{{option1}}</button> on click only go to next question
-            <button>{{option2}}</button>
-      </div>
+     <button (click)="fetchprevious()" *ngIf="ifFirstQuestion()" class="btn-outline-lg mt-2"
+          style="float: left;">Previous</button>
+
+
+     <router-outlet></router-outlet>
 </div>
 
 
-<div>
-      if multiplechoice
-      <label>{{Question}}</label>
-      <div *ngFor="let op in options arr">
-
-            <button>{{op}}</button>
-      </div>
-      if numberofQ!=1 <button>GotoNextQ</button>
-      else<button>Continue</button>
-</div> --> 
 
 
-<div>
-      <label>{{Qtext}}</label>
-      <button (click) = "onClick()">click1</button>
-      <button (click) = "onClick()">click2</button>
-</div>
+     <!-- [style.color]="'blue'" -->
+     <!-- [style.color]="haserr?'red':'green'" -->
+     <!-- [ngStyles]="classwithallstylesthatobjokk" -->
 
+     <!-- <div *ngIf="checkChoicevalue(op.choice);else elb">
+                         
+                         <button (click)="onSelect(op.choice,op.choicevalue)" class=" btn-notmc add-color-if-true"
+                         >{{op.choice}}:{{op.choicevalue}}</button>
+                    </div>
+                    <ng-template #elb>
+                         
+                         <button (click)="onSelect(op.choice,op.choicevalue)"  class=" btn-notmc"
+                         >{{op.choice}}:{{op.choicevalue}}</button>
+                         [ngClass]="{'add-color-if-true':checkChoicevalue(op.choice)}" -->
+                    <!-- </ng-template> -->
+
+
+                    <!-- 
+     <div *ngIf=!mc>
+          <label class="qestion-border pt-2 pl-1 pb-2 pr-1">{{QText}}</label>
+          <div class="qestion-border">
+               <div *ngFor="let op of options;index as i">
+                    <button (click)="onSelect(op.choice,op.choicevalue,op.minPrice,op.maxPrice)"
+                         [ngClass]="checkChoicevalue(i)?'add-color-if-true btn-notmc':'btn-notmc'">{{op.choice}}:{{op.choicevalue}}</button>
+               </div>
+          </div>
+     </div> *ngIf=mc-->

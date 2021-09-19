@@ -1,0 +1,49 @@
+ .box-border div
+{
+    background-color: #9d1419;
+    border: 1px solid #fecc00;
+    border-width: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    line-height: 200%;
+    font-size: 20px;
+    white-space: pre-wrap !important;
+}
+
+.box-border h4,p
+{
+    background-color: #9d1419;
+}
+.yellow-row
+{
+    border: 1px solid #fecc00;
+    background-color: #fecc00;
+}
+button
+{
+    border-radius: 50%;
+    border:2px solid #7dc22b;
+    padding:2%;
+    background-color:#7dc22b ;
+    color: white;
+    width: 10%;
+    height: auto;
+    display: block;
+    line-height: 150%;
+    font-weight: 600;
+	font-size: 0.875rem;
+	text-decoration: none;
+	transition: all 0.2s;
+
+    overflow: hidden;
+    white-space: pre-wrap !important;
+    
+}
+button:hover {
+	background-color: darkgreen;
+	color: white; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+    
+}
+

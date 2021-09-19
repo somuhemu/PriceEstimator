@@ -1,0 +1,80 @@
+<!--  -->
+<div *ngIf="displayedAtFirst();else elseblock">
+    <div *ngFor="let sec of sec_ids;index as i">
+        <div *ngIf="i>0">
+            <span>
+                <div *ngIf="i==1">
+                    <p>
+                        This is where the fun part starts!<br>
+                        We prepared some questions to specify your digital desires.<br>
+                        The more precise you are, the better we can estimate your necessary budget.
+                    </p>
+
+                    <h1>Let us guide you.....</h1>
+
+                    <p>Don’t know exactly what you need yet?<br>
+                        Don’t worry! We’ll take the full tour, and you can skip parts along the way.</p>
+
+                    <button routerLink="/sectionskip"
+                        (click)="get_started_from_sec(i,'want_to_view_questions');resetFirst()" *ngIf="get_sec_name(i)"
+                        class="btn-solid-lg">Get Started
+                    </button>
+
+                    <h1>or pick a topic that you prefer.</h1>
+                    <h1>or go directly to the topic of your choice.</h1>
+                </div>
+                <button routerLink="/sectionskip"
+                    (click)="get_started_from_sec(i,'want_to_view_questions_of_this_sec');resetFirst()"
+                    *ngIf="get_sec_name(i)" class="btn-solid-lg">{{secName}}</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<ng-template #elseblock>
+   
+    <div *ngIf="!finalskipped && get_sec_name(secId)">
+     
+        <h1 style="text-align: center;">{{secName}}</h1>
+        <hr class="yellow-row">
+        <div class="qestion-border">
+            <div *ngIf="secId===1" class=" mt-4 ml-4 mr-4 fontsize">
+                It all begins with narrowing down your strategy. A thought-out strategy is the solid
+                base of your digital project. It’s an important part of your digital transformation, if not,
+                the most important part. When defining your strategy, we try to find an answer to
+                questions such as: “who is your target audience, what is the message, which channels
+                do we need, how is this going to fit the market, and at what cost?”.
+            </div>
+            <div *ngIf="secId===2" class=" mt-4 ml-4 mr-4 fontsize">
+                Of course, you want your digital product to look good and make it as easy as possible
+                to use. Through a thorough analysis of your and your users’ needs, our designers can
+                create the most sharp-looking digital product with the most intelligent user
+                experience.
+            </div>
+            <div *ngIf="secId===3" class=" mt-4 ml-4 mr-4 fontsize">
+                We’re at the core of our services, the development process. The following questions
+                will measure your needs in terms of product type, desired features, implementations, …
+                Due to our broad technology stack and our excellent team of front- and backend
+                experts we can develop any custom software or digital product. So don’t hold back!
+            </div>
+            <div *ngIf="secId===4" class=" mt-4 ml-4 mr-4 fontsize">
+                Once your product is developed, it’s ready to be launched. Will you be doing this
+                yourself or do you need some support in your “go to market” strategy? Other than that,
+                we can take care of your product by just fixing bugs or we can help you ensure your
+                product’s growth by analyzing your users’ needs and making the right changes. Let’s
+                find out how close we’ll be partnering.
+            </div>
+            <br>
+            <button routerLink="/parentofquestions" *ngIf="!finalskipped" class="btn-solid-lg ml-5 mb2">Get
+                Started</button>
+
+            <button routerLink="/sectionskip" (click)="get_started_from_sec(secId,'want_to_skip_the_section')"
+                *ngIf="!finalskipped" class="btn-solid-lg mb-2">Skip
+                {{secName}}</button>
+        </div>
+
+    </div>
+    <button routerLink="/overview" *ngIf="finalskipped" class="btn-solid-lg">Final Summary</button>
+
+</ng-template>
+<router-outlet></router-outlet>

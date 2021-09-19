@@ -1,38 +1,21 @@
-<!-- <p>questionsdisplay works!</p>
-<p>{{sections}}</p>
-<p *ngFor="let obj of sections">{{obj.id}} {{obj.qafs}}</p>
+<div class="placemiddle">
+     <div>
+          <label class="qestion-border pt-2 pl-1 pb-2 pr-1">{{Question_obj?.question_text}}</label>
+          <div *ngFor="let op of Question_obj?.options">
+               <button (click)="onSelect(Question_obj,op.choice)"
+                    class="btn-mc">{{op.choice}}:{{op.choicevalue}}</button>
+          </div>
+     </div>
+     <div *ngIf="!wanttogotoSectionOverview(); else elb">
+          <button (click)="fetchnext()" class="btn-solid-lg mt-2" style="float: right;">next</button>
 
-<div>{{ name }}</div>
-
-<input type="text" class="form-control" #serverNameInput>
-<button class="btn btn-primary" (click)="onAddServer(serverNameInput)">Add Server</button>
-
-<div>
-      if not multiple choice
-      <label>{{Question}}</label>
-      <div>
-
-            <button>{{option1}}</button> on click only go to next question
-            <button>{{option2}}</button>
-      </div>
+     </div>
+     <ng-template #elb>
+          <div *ngIf="wanttogotoSectionOverview()">
+               <button routerLink="/overview" class="btn-solid-lg mt-2" style="float: right;">Next</button>
+          </div>
+     </ng-template>
+     <button (click)="fetchprevious()" *ngIf="!if_First_Question()" class="btn-outline-lg mt-2"
+          style="float: left;">Previous</button>
+     <router-outlet></router-outlet>
 </div>
-
-
-<div>
-      if multiplechoice
-      <label>{{Question}}</label>
-      <div *ngFor="let op in options arr">
-
-            <button>{{op}}</button>
-      </div>
-      if numberofQ!=1 <button>GotoNextQ</button>
-      else<button>Continue</button>
-</div> --> 
-
-
-<div>
-      <label>{{Qtext}}</label>
-      <button (click) = "onClick()">click1</button>
-      <button (click) = "onClick()">click2</button>
-</div>
-

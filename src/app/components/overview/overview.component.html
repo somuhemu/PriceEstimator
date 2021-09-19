@@ -1,1 +1,66 @@
-<p>overview works!</p>
+<div *ngIf="!displayfinalinlastoverview; else elseBlock">
+    <div>
+        <h1 style="float: left;">Overview:{{secname}}</h1>
+        <a routerLink="/overview" (click)="display_final_overview();set_to_final_page()" class=" finish pt-4 pr-3"
+            *ngIf="!check_for_if_Next_isfinal_summary()">Finish Here</a>
+    </div>
+    <div class="clearfloat"></div>
+    <hr class="yellow-row">
+
+
+    <h4>Let’s show you a quick recap of your answers. </h4>
+    <div *ngFor="let ans of Answered_questions_for_a_section;index as i" class="bg-color border-box">
+        {{i+1}}
+        <label class="ml-2"> {{ans.question_obj.question_text}}</label>
+        <div class="bg-color">
+            Ans)
+            <span *ngFor="let op of ans.question_obj.options" class="bg-color">
+                <span *ngIf="ans.choosed_choices.includes(op.choice)">
+                    <label style="color: green;" class="ml-2"> {{op.choicevalue}}</label>
+                </span>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<ng-template #elseBlock>
+    <div *ngFor="let sid of sec_ids;index as i">
+        <span *ngIf="set_secId(i)">
+            <span *ngIf="get_Answers_for_this_sec()">
+
+                <span *ngIf="Answered_questions_for_a_section.length!=0" class="qestion-border">
+                    <h1 class="bg-color">{{secname}}</h1>
+                    <div *ngFor="let ans of Answered_questions_for_a_section;index as i" class="bg-color">
+                        {{i+1}}
+                        <label class="ml-2 bg-color"> {{ans.question_obj.question_text}}</label>
+                        <div class="bg-color">
+                            Ans)
+                            <span *ngFor="let op of ans.question_obj.options" class="bg-color">
+                                <span *ngIf="ans.choosed_choices.includes(op.choice)" class="bg-color">
+                                    <label style="color: green;" class="ml-2 bg-color"> {{op.choicevalue}}</label>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </span>
+            </span>
+        </span>
+    </div>
+    <button (click)="get_Min_And_MaxPrice()" class="btn-solid-lg">View Price</button>
+        <div *ngIf="minimumPrice!=0 && maximumPrice!=0">
+            <h3>Minimum Price: {{minimumPrice}}</h3>
+            <h3>Maximum Price: {{maximumPrice}}</h3>
+        </div>
+</ng-template>
+
+<div *ngIf="!final_page">
+    <button routerLink="/sectionskip" class="circle-box mt-2" (click)="increaseSecNo()"
+        *ngIf="!check_for_if_Next_isfinal_summary();else elb">continue</button>
+    <ng-template #elb>
+        <button routerLink="/overview" class="circle-box mt-2"
+            (click)="display_final_overview();set_to_final_page()">Finish</button>
+    </ng-template>
+</div>
+
+<router-outlet></router-outlet>

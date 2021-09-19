@@ -1,28 +1,28 @@
 
  [
         {
-            "id" : 1,
-            "sname" :"s1",
-            "qafs" : [0,1]
+            "sid": 0,
+            "sec_name" :"General Questions",
+            "question_arr_for_this_sec" : [0,1]
         },
         {
-            "id" : 2,
-            "sname" :"s2",
-            "qafs" : [2,3,4,5,6,7,8,9,10,11,12,13]
+            "sid": 1,
+            "sec_name" :"Strategy",
+            "question_arr_for_this_sec" : [2,3,4,5,6,7,8,9,10,11,12,13]
         },
         {
-            "id" : 3,
-            "sname" :"s3",
-            "qafs" : [14,15]
+            "sid": 2,
+            "sec_name" :"UI/UX",
+            "question_arr_for_this_sec" : [14,15]
         },
         {
-            "id" : 4,
-            "sname" :"s4",
-            "qafs" : [16,17,18,19]
+            "sid": 3,
+            "sec_name" :"Development",
+            "question_arr_for_this_sec" : [16,17,18,19]
         },
         {
-            "id" : 5,
-            "sname" :"s5",
-            "qafs" : [20,21]
+            "sid": 4,
+            "sec_name" :"Product Growth",
+            "question_arr_for_this_sec" : [20,21]
         }
 ]

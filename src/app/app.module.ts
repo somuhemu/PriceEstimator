@@ -1,39 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule,routingComponents } from './app.routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { LandingpageComponent } from './components/landingpage/landingpage.component';
-import { ParentofquestionsComponent } from './components/parentofquestions/parentofquestions.component';
 import { QuestionsdisplayComponent } from './components/parentofquestions/questionsdisplay/questionsdisplay.component';
-import { OverviewComponent } from './components/overview/overview.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+//
+
 
 import { FetchStoreService } from './fetchstore.service';
+//import { SectionskipComponent } from './components/sectionskip/sectionskip.component';
 
 
-const appRoutes: Routes = [
-  { path: '', component: LandingpageComponent },
-  { path:'parentofquestions',component: ParentofquestionsComponent},
-  { path:'overview',component:OverviewComponent}
 
-]
 @NgModule({
   declarations: [
     AppComponent,
-    LandingpageComponent,
-    ParentofquestionsComponent,
     QuestionsdisplayComponent,
-    OverviewComponent,
-    HeaderComponent,
-    FooterComponent
+    routingComponents,
+    //SectionskipComponent
+  
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
     BrowserModule,
-    FormsModule
+    FormsModule,
+    
+    AppRoutingModule
   ],
   providers: [FetchStoreService],
   bootstrap: [AppComponent]

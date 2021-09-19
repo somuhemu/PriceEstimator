@@ -1,5 +1,5 @@
-import { Component, OnInit,EventEmitter, Output ,Input} from '@angular/core';
-import { FetchStoreService } from '../../../fetchstore.service';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { FetchStoreService, QuestionJSON_Obj_Form } from '../../../fetchstore.service';
 
 @Component({
   selector: 'app-questionsdisplay',
@@ -8,16 +8,35 @@ import { FetchStoreService } from '../../../fetchstore.service';
 })
 export class QuestionsdisplayComponent implements OnInit {
 
-  @Output() questionClicked = new EventEmitter();
-  constructor(private fetchstoreservice: FetchStoreService) { }
-  QNo = this.fetchstoreservice.QNo;
+  @Input()
+  Question_obj!: QuestionJSON_Obj_Form;
+  @Output() onFetchNxt = new EventEmitter();
+  @Output() onPrev = new EventEmitter();
+  @Output() onSelected = new EventEmitter<{ question_obj: QuestionJSON_Obj_Form, choice: string }>();
+  isFirst_question: boolean = true;
+  constructor(private fetchstoreservice: FetchStoreService) {
 
-  Qtext = this.fetchstoreservice.Qlist[this.QNo].q_text;
-  onClick()
-  {
-     this.questionClicked.emit();
+  }
+  wanttogotoSectionOverview() {
+    return this.fetchstoreservice.go_to_section_overview();
+  }
+  fetchnext() {
+    this.onFetchNxt.emit();
+  }
+  fetchprevious() {
+    this.onPrev.emit();
+
+  }
+  if_First_Question() {
+    return this.isFirst_question = this.fetchstoreservice.ifFirstQuestion()
+  }
+  onSelect(question_obj: QuestionJSON_Obj_Form, choice: string) {
+
+    this.onSelected.emit({ question_obj, choice });
+    console.log()
   }
   ngOnInit(): void {
+
   }
 
 }

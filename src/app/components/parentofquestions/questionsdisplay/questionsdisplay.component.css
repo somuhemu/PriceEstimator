@@ -1,0 +1,79 @@
+.placemiddle
+{
+   
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-top: 10%;
+    
+}
+.qestion-border
+{
+    border: 1px solid #fecc00;
+    border-width: 2px;
+    box-sizing: border-box;
+    width: 100%;
+	line-height: 150%;
+	
+    overflow: hidden;
+    white-space: pre-wrap !important;
+}
+
+.add-color-if-true{
+	background-color: green;
+	color: white; 
+	text-decoration: none;
+}
+.add-color-if-true:visited{
+    width: 100%;
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #ee0000;
+	border-radius: 4px;
+	background-color: #9d1419;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-mc
+{
+	width: 100%;
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #ee0000;
+	border-radius: 4px;
+	background-color: #9d1419;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 150%;
+	text-decoration: none;
+	transition: all 0.2s;
+
+	overflow: hidden;
+    white-space: pre-wrap !important;
+}
+.btn-mc:hover{
+	background-color: grey;
+	color: white; 
+	text-decoration: none;
+}
+.btn-mc:visited{
+	background-color: green;
+	color: white; 
+	text-decoration: none;
+}
+.btn-mc:active{
+	background-color: green;
+}
+.btn-mc:focus{
+	background-color: green;
+	color: white; 
+	text-decoration: none;
+}
+.clearfloat{
+    clear:both;
+}

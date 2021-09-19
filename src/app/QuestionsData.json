@@ -1,249 +1,270 @@
 [
     {
-        "id" : 0,
-        "q_text" : "Do you already have an existing product to start from ?",
+        
+        "qid": 0,
+        "question_text" : "Do you already have an existing product to start from ?",
         "options" : [
-            {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-            {     "b" : "No" ,"minPrice":5, "maxPrice":10  }
+            {   "choice":"a","choicevalue":"yes" ,"minPrice":5, "maxPrice":10},
+         
+            {     "choice":"b" ,"choicevalue": "No" ,"minPrice":5, "maxPrice":10  }
         ] ,
         "multiple_choice" : false
      },
 
      {
-         "id" : 1,
-         "q_text" : "How would you describe the size of your desired digital solution ?",
+
+         "qid": 1,
+         "question_text" : "How would you describe the size of your desired digital solution ?",
          "options" : [
-             {     "a" : "Small"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "Medium" ,"minPrice":5, "maxPrice":10  },
-             {     "c" : "Large"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Small"  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"b" ,"choicevalue": "Medium" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"c" ,"choicevalue":"Large"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
 
       {
-         "id" : 2,
-         "q_text" : "To what extent do you feel like you need some help in digital strategy ?",
+
+         "qid": 2,
+         "question_text" : "To what extent do you feel like you need some help in digital strategy ?",
          "options" : [
-             {     "a" : 1  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : 2  ,"minPrice":5, "maxPrice":10 },
-             {     "c" : 3 ,"minPrice":5, "maxPrice":10  },
-             {     "d" : 4  ,"minPrice":5, "maxPrice":10 },
-             {     "e" : 5  ,"minPrice":5, "maxPrice":10 }
+             {     "choice":"a" ,"choicevalue": 1  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"b" ,"choicevalue": 2  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"c" ,"choicevalue": 3 ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"d" ,"choicevalue": 4  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "e" ,"choicevalue": 5  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 3,
-         "q_text" : "Do you want us to help you define the business objectives for your project ?",
+
+         "qid": 3,
+         "question_text" : "Do you want us to help you define the business objectives for your project ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {     "choice":"a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 4,
-         "q_text" : "Do you want us to help you define KPI’s and targets for your objectives ?",
+
+         "qid": 4,
+         "question_text" : "Do you want us to help you define KPI’s and targets for your objectives ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {     "choice":"a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 5,
-         "q_text" : "Do you want us to (further) investigate your target groups and their needs ?",
+
+         "qid": 5,
+         "question_text" : "Do you want us to (further) investigate your target groups and their needs ?",
          "options" : [
-             {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes"  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 6,
-         "q_text" : "Do you want us to (further) investigate your competition ?",
+
+         "qid": 6,
+         "question_text" : "Do you want us to (further) investigate your competition ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 7,
-         "q_text" : "Do you want us to guide you through the trends in your industry ?",
+
+         "qid": 7,
+         "question_text" : "Do you want us to guide you through the trends in your industry ?",
          "options" : [
-             {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "No" ,"minPrice":5, "maxPrice":10  }
+             {    "choice": "a" ,"choicevalue": "Yes"  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"b" ,"choicevalue": "No" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 8,
-         "q_text" : "Do you want us to create a clear picture of the strengths and weaknesses of yourcurrent offering ?",
+
+         "qid": 8,
+         "question_text" : "Do you want us to create a clear picture of the strengths and weaknesses of yourcurrent offering ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No" ,"minPrice":5, "maxPrice":10  }
+             {     "choice":"a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"b" ,"choicevalue": "No" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 9,
-         "q_text" : "Do you want us to analyse your current analytics in order to offer more personalised recommendations ?",
+
+         "qid": 9,
+         "question_text" : "Do you want us to analyse your current analytics in order to offer more personalised recommendations ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 10,
-         "q_text" : "Do you want us to translate your business goals into a proposal for a concrete digital solution ?",
+
+         "qid": 10,
+         "question_text" : "Do you want us to translate your business goals into a proposal for a concrete digital solution ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 11,
-         "q_text" : "Do you want us to define a roadmap for your offering ?",
+
+         "qid": 11,
+         "question_text" : "Do you want us to define a roadmap for your offering ?",
          "options" : [
-             {     "a" : "Yes"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "No" ,"minPrice":5, "maxPrice":10  }
+             {    "choice": "a" ,"choicevalue": "Yes"  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "b" ,"choicevalue": "No" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 12,
-         "q_text" : "Do you need branding for your product ?",
+
+         "qid": 12,
+         "question_text" : "Do you need branding for your product ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 13,
-         "q_text" : "Do you need a technical analysis of your product ?",
+
+         "qid": 13,
+         "question_text" : "Do you need a technical analysis of your product ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
 
       {
-         "id" : 14,
-         "q_text" : "Select the aspects you need for UX (multiple allowed).",
+
+         "qid": 14,
+         "question_text" : "Select the aspects you need for UX (multiple allowed).",
          "options" : [
-             {     "a" : "WIREFRAMES"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "VISUAL DESIGNS" ,"minPrice":5, "maxPrice":10  },
-             {     "c" : "USER STORIES" ,"minPrice":5, "maxPrice":10  },
-             {     "d" : "MVP"  ,"minPrice":5, "maxPrice":10 },
-             {     "e" : "USER TESTS" ,"minPrice":5, "maxPrice":10  },
-             {     "f" : "ANALYTICS"  ,"minPrice":5, "maxPrice":10 },
-             {     "g" : "AB TESTING" ,"minPrice":5, "maxPrice":10  },
-             {     "h" : "I DON’T NEED ANY UX" ,"minPrice":5, "maxPrice":10  }
+             {"choice":     "a" ,"choicevalue": "WIREFRAMES"  ,"minPrice":5, "maxPrice":10 },
+             {"choice":     "b" ,"choicevalue": "VISUAL DESIGNS" ,"minPrice":5, "maxPrice":10  },
+             {"choice":     "c" ,"choicevalue": "USER STORIES" ,"minPrice":5, "maxPrice":10  },
+             {"choice":     "d" ,"choicevalue": "MVP"  ,"minPrice":5, "maxPrice":10 },
+             {"choice":     "e" ,"choicevalue": "USER TESTS" ,"minPrice":5, "maxPrice":10  },
+             {"choice":     "f" ,"choicevalue": "ANALYTICS"  ,"minPrice":5, "maxPrice":10 },
+             {"choice":     "g" ,"choicevalue": "AB TESTING" ,"minPrice":5, "maxPrice":10  },
+             {"choice":     "h" ,"choicevalue": "I DON’T NEED ANY UX" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : true
       },
 
       {
-         "id" : 15,
-         "q_text" : "Mark the aspects you need for UI (multiple allowed).",
+
+         "qid": 15,
+         "question_text" : "Mark the aspects you need for UI (multiple allowed).",
          "options" : [
-             {     "a" : "ANIMATIONS" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "ILLUSTRATIONS" ,"minPrice":5, "maxPrice":10  },
-             {     "c" : "DESIGN SYSTEM" ,"minPrice":5, "maxPrice":10  },
-             {     "d" : "I DON’T NEED ANY UI"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "ANIMATIONS" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "ILLUSTRATIONS" ,"minPrice":5, "maxPrice":10  },
+             {    "choice":"c" ,"choicevalue": "DESIGN SYSTEM" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "d" ,"choicevalue": "I DON’T NEED ANY UI"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : true
       },
 
 
       {
-         "id" : 16,
-         "q_text" : "What devices does your application have to support? (multiple allowed)",
+
+         "qid": 16,
+         "question_text" : "What devices does your application have to support? (multiple allowed)",
          "options" : [
-             {     "a" : "PHONE"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "TABLET"  ,"minPrice":5, "maxPrice":10 },
-             {     "c" : "BROWSER" ,"minPrice":5, "maxPrice":10  },
-             {     "d" : "DESKTOP" ,"minPrice":5, "maxPrice":10  },
-             {     "e" : "TV" ,"minPrice":5, "maxPrice":10  },
-             {     "f" : "CMS"  ,"minPrice":5, "maxPrice":10 },
-             {     "g" : "OTHER"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "PHONE"  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "b" ,"choicevalue": "TABLET"  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "c" ,"choicevalue": "BROWSER" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "d" ,"choicevalue": "DESKTOP" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "e" ,"choicevalue": "TV" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "f" ,"choicevalue": "CMS"  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "g" ,"choicevalue": "OTHER"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : true
       },
 
       {
-         "id" : 17,
-         "q_text" : "Do you have your own backend systems ?",
+
+         "qid": 17,
+         "question_text" : "Do you have your own backend systems ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {     "choice":"a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
              
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 18,
-         "q_text" : "Are there external API's to take into account for integration ?",
+
+         "qid": 18,
+         "question_text" : "Are there external API's to take into account for integration ?",
          "options" : [
-             {     "a" : "Yes" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "No"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "Yes" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "No"  ,"minPrice":5, "maxPrice":10 }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 19,
-         "q_text" : "Check off the features you want your product to have. Features that might seem minor to you, can have a big impact on your application and the building process. Be very precise about the options you pick, that way you’ll get the best indication of the required budget. If you don’t have a clue about the meaning of these features, just contact us and our team will be happy to help you out. (multiple allowed).",
+
+         "qid": 19,
+         "question_text" : "Check off the features you want your product to have. Features that might seem minor to you, can have a big impact on your application and the building process. Be very precise about the options you pick, that way you’ll get the best indication of the required budget. If you don’t have a clue about the meaning of these features, just contact us and our team will be happy to help you out. (multiple allowed).",
           
          "options" : [
-             {     "a" : "LOCATION / MAPS" ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "SOCIAL ENGAGEMENT"  ,"minPrice":5, "maxPrice":10 },
-             {     "c" : "BILLING"  ,"minPrice":5, "maxPrice":10 },
-             {     "d" : "2 FACTOR AUTHENTICATION" ,"minPrice":5, "maxPrice":10  },
-             {     "e" : "PUSH NOTIFICATIONS" ,"minPrice":5, "maxPrice":10  },
-             {     "f" : "CAMERA" ,"minPrice":5, "maxPrice":10  },
-             {     "g" : "BIOMETRICS" ,"minPrice":5, "maxPrice":10  },
-             {     "h" : "VIDEO / AUDIO" ,"minPrice":5, "maxPrice":10  },
-             {     "i" : "SOCIAL MEDIA" ,"minPrice":5, "maxPrice":10  },
-             {     "j" : "IN APP PURCHASES" ,"minPrice":5, "maxPrice":10  },
-             {     "k" : "CALENDAR" ,"minPrice":5, "maxPrice":10  },
-             {     "l" : "CHAT" ,"minPrice":5, "maxPrice":10  },
-             {     "m" : "SCANNING"  ,"minPrice":5, "maxPrice":10 },
-             {     "n" : "3D" ,"minPrice":5, "maxPrice":10  },
-             {     "o" : "AUGMENTED REALITY" ,"minPrice":5, "maxPrice":10  },
-             {     "p" : "ITSME INTEGRATION"  ,"minPrice":5, "maxPrice":10 },
-             {     "q" : "WIDGETS" ,"minPrice":5, "maxPrice":10  },
-             {     "r" : "GRAPHS" ,"minPrice":5, "maxPrice":10  },
-             {     "s" : "SETTINGS"  ,"minPrice":5, "maxPrice":10 },
-             {     "t" : "VOICE ACTIONS / ASSISTANT INTEGRATION"  ,"minPrice":5, "maxPrice":10 },
-             {     "u" : "APP ACTIONS / SHORTCUTS" ,"minPrice":5, "maxPrice":10  },
-             {     "v" : "APP PREVIEW' MODE: APP CLIPS / INSTANT APPS" ,"minPrice":5, "maxPrice":10  },
-             {     "w" : "CAR PLATFORM INTEGRATION" ,"minPrice":5, "maxPrice":10  },
-             {     "x" : "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING" ,"minPrice":5, "maxPrice":10  },
-             {     "y" : "ADVANCED ACCESSIBILITY" ,"minPrice":5, "maxPrice":10  },
-             {     "z" : "AUTHENTICATION (OPEN ID, SSO, SAML, ...)" ,"minPrice":5, "maxPrice":10  },
-             {     "aa" : "WEBSOCKETS" ,"minPrice":5, "maxPrice":10  },
-             {     "bb" : "WEB OFFLINE SUPPORT" ,"minPrice":5, "maxPrice":10  },
-             {     "cc" : "STREAMING"  ,"minPrice":5, "maxPrice":10 }
+             {    "choice": "a" ,"choicevalue": "LOCATION / MAPS" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "b" ,"choicevalue": "SOCIAL ENGAGEMENT"  ,"minPrice":5, "maxPrice":10 },
+             {    "choice": "c" ,"choicevalue": "BILLING"  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"d" ,"choicevalue": "2 FACTOR AUTHENTICATION" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"e" ,"choicevalue": "PUSH NOTIFICATIONS" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"f" ,"choicevalue": "CAMERA" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "g" ,"choicevalue": "BIOMETRICS" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "h" ,"choicevalue": "VIDEO / AUDIO" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"i" ,"choicevalue": "SOCIAL MEDIA" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"j" ,"choicevalue": "IN APP PURCHASES" ,"minPrice":5, "maxPrice":10  },
+             {    "choice": "k" ,"choicevalue": "CALENDAR" ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"l" ,"choicevalue": "CHAT" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "m" ,"choicevalue": "SCANNING"  ,"minPrice":5, "maxPrice":10 },
+             {      "choice": "n" ,"choicevalue": "3D" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "o" ,"choicevalue": "AUGMENTED REALITY" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "p" ,"choicevalue": "ITSME INTEGRATION"  ,"minPrice":5, "maxPrice":10 },
+             {      "choice": "q" ,"choicevalue": "WIDGETS" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "r" ,"choicevalue": "GRAPHS" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "s" ,"choicevalue": "SETTINGS"  ,"minPrice":5, "maxPrice":10 },
+             {      "choice": "t" ,"choicevalue": "VOICE ACTIONS / ASSISTANT INTEGRATION"  ,"minPrice":5, "maxPrice":10 },
+             {      "choice": "u" ,"choicevalue": "APP ACTIONS / SHORTCUTS" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "v" ,"choicevalue": "APP PREVIEW' MODE: APP CLIPS / INSTANT APPS" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "w" ,"choicevalue": "CAR PLATFORM INTEGRATION" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "x" ,"choicevalue": "ARTIFICIAL INTELLIGENCE/MACHINE LEARNING" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "y" ,"choicevalue": "ADVANCED ACCESSIBILITY" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "z" ,"choicevalue": "AUTHENTICATION (OPEN ID, SSO, SAML, ...)" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "aa","choicevalue": "WEBSOCKETS" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "bb","choicevalue": "WEB OFFLINE SUPPORT" ,"minPrice":5, "maxPrice":10  },
+             {      "choice": "cc","choicevalue": "STREAMING"  ,"minPrice":5, "maxPrice":10 }
              
 
          ] ,
@@ -252,25 +273,27 @@
 
 
       {
-         "id" : 20,
-         "q_text" : "Select your preference: After the release of my product I need…",
+
+         "qid": 20,
+         "question_text" : "Select your preference: After the release of my product I need…",
          "options" : [
-             {     "a" : "... THE ASSURANCE THAT EVERYTHING KEEPS WORKING SMOOTHLY ALL THE TIME AND A SERVICE DESK FOR ALL OF MY QUESTIONS AND REPORTS." ,"minPrice":5, "maxPrice":10  },
-             {     "b" : "... THE ASSURANCE THAT MY PRODUCT WILL GET ALL OF THE REQUIRED UPDATES."  ,"minPrice":5, "maxPrice":10 },
-             {     "c" : "... A CUSTOM MADE PARTNERSHIP THAT ENSURES MY PRODUCT TO EXCEL." ,"minPrice":5, "maxPrice":10  },
-             {     "d" : "… NO MORE GUIDANCE" ,"minPrice":5, "maxPrice":10  }
+             {     "choice":"a" ,"choicevalue": "... THE ASSURANCE THAT EVERYTHING KEEPS WORKING SMOOTHLY ALL THE TIME AND A SERVICE DESK FOR ALL OF MY QUESTIONS AND REPORTS." ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"b" ,"choicevalue": "... THE ASSURANCE THAT MY PRODUCT WILL GET ALL OF THE REQUIRED UPDATES."  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"c" ,"choicevalue": "... A CUSTOM MADE PARTNERSHIP THAT ENSURES MY PRODUCT TO EXCEL." ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"d" ,"choicevalue": "… NO MORE GUIDANCE" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : false
       },
 
       {
-         "id" : 21,
-         "q_text" : "For the go-to-market of my solution I need…",
+
+         "qid": 21,
+         "question_text" : "For the go-to-market of my solution I need…",
          "options" : [
-             {     "a" : "... LITTLE SUPPORT FOR THE 'GO TO MARKET' OF MY PRODUCT"  ,"minPrice":5, "maxPrice":10 },
-             {     "b" : "... PROACTIVE SUPPORT AND FITTING MARKETING ACTIONS ON A PERSONALISED ROADMAP." ,"minPrice":5, "maxPrice":10  },
-             {     "c" : "... A CUSTOM MADE PARTNERSHIP THAT ENSURES MY PRODUCT TO EXCEL IN THE MARKET." ,"minPrice":5, "maxPrice":10  },
-             {     "d" : " … NO MORE GUIDANCE" ,"minPrice":5, "maxPrice":10  }
+             {     "choice":"a" ,"choicevalue": "... LITTLE SUPPORT FOR THE 'GO TO MARKET' OF MY PRODUCT"  ,"minPrice":5, "maxPrice":10 },
+             {     "choice":"b" ,"choicevalue": "... PROACTIVE SUPPORT AND FITTING MARKETING ACTIONS ON A PERSONALISED ROADMAP." ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"c" ,"choicevalue": "... A CUSTOM MADE PARTNERSHIP THAT ENSURES MY PRODUCT TO EXCEL IN THE MARKET." ,"minPrice":5, "maxPrice":10  },
+             {     "choice":"d" ,"choicevalue": " … NO MORE GUIDANCE" ,"minPrice":5, "maxPrice":10  }
          ] ,
          "multiple_choice" : false
       }
